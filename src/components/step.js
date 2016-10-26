@@ -32,7 +32,7 @@ export default class Step extends Component {
                     </CardText>
                     <CardActions>
                         <FlatButton
-                            primary
+                            secondary
                             label='remove'
                             onClick={this.handleRemove}
                         />

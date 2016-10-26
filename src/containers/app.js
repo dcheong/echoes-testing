@@ -1,7 +1,7 @@
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import App from '../components/app'
-import {addStep, removeStep} from '../actions/steps'
+import {addStep, removeStep, submitRecipe} from '../actions/steps'
 
 function mapStateToProps(state) {
     return {
@@ -16,6 +16,9 @@ function mapDispatchToProps(dispatch) {
         },
         removeStep(id) {
             dispatch(removeStep(id))
+        },
+        submitRecipe() {
+            dispatch(submitRecipe())
         }
     }
 }
