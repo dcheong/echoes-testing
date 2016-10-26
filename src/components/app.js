@@ -27,7 +27,7 @@ export default class App extends Component {
 
     return (
       <div className="page">
-        <AppBar title="Team 182 ECHOES" />
+        <AppBar title="Team 182 ECHOES" showMenuIconButton={false}/>
         <div className="content">
           <Card>
             <CardHeader
