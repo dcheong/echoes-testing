@@ -4,6 +4,7 @@ import { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
+import TextField from 'material-ui/TextField';
 
 import Step from './step'
 import InputStep from './input'
@@ -34,6 +35,10 @@ export default class App extends Component {
               titleStyle={titleStyle}
               title="New Recipe"
             />
+            <CardText>
+              <TextField hintText="Grandma's Cookies..." floatingLabelText="Recipe Name" floatingLabelFixed fullWidth/>
+            </CardText>
+
           </Card>
           { this.props.steps.map((step, i) => 
               <Step removeStep={self.props.removeStep} id={i} content={step.content} />)
